@@ -173,7 +173,7 @@ function getBinary(product, configuredVersion) {
                     return platform;
             }
         };
-        core.info(`downloading ${version.version} from ${releasesUrl()}`);
+        core.info(`downloading ${product}@${version.version} from ${releasesUrl()}`);
         try {
             // Download the product
             toolPath = yield tc.downloadTool(`${releasesUrl()}/${product}/${version === null || version === void 0 ? void 0 : version.version}/${product}_${version === null || version === void 0 ? void 0 : version.version}_${goPlatform()}_${goArch()}.zip`);

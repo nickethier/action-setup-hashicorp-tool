@@ -191,7 +191,7 @@ export async function getBinary(
     }
   }
 
-  core.info(`downloading ${version.version} from ${releasesUrl()}`)
+  core.info(`downloading ${product}@${version.version} from ${releasesUrl()}`)
 
   try {
     // Download the product
