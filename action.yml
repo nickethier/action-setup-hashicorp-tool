@@ -1,6 +1,6 @@
 name: 'Setup HashiCorp tool'
 description: 'Install a binary release of a HashiCorp tool from releases.hashicorp.com'
-author: 'Nick Ethier'
+author: 'HashiCorp'
 inputs:
   product:
     required: true
