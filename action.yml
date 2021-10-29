@@ -1,11 +1,13 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Setup HashiCorp tool'
+description: 'Install a binary release of a HashiCorp tool from releases.hashicorp.com'
+author: 'Nick Ethier'
 inputs:
-  milliseconds: # change this
+  product:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'The product this action should install.'
+  version:
+    required: true
+    description: 'The version of the product which should be installed. Supports semver spec and ranges'
 runs:
   using: 'node12'
   main: 'dist/index.js'

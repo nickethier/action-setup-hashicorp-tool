@@ -1,0 +1,283 @@
+{
+    "otto": {
+        "name": "otto",
+        "versions": {
+            "0.1.0": {
+                "name": "otto",
+                "version": "0.1.0",
+                "shasums": "otto_0.1.0_SHA256SUMS",
+                "shasums_signature": "otto_0.1.0_SHA256SUMS.sig",
+                "shasums_signatures": [
+                    "otto_0.1.0_SHA256SUMS.348FFC4C.sig",
+                    "otto_0.1.0_SHA256SUMS.72D7468F.sig",
+                    "otto_0.1.0_SHA256SUMS.sig"
+                ],
+                "builds": [
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "darwin",
+                        "arch": "386",
+                        "filename": "otto_0.1.0_darwin_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_darwin_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "darwin",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.0_darwin_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_darwin_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "linux",
+                        "arch": "386",
+                        "filename": "otto_0.1.0_linux_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_linux_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "linux",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.0_linux_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_linux_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "linux",
+                        "arch": "arm",
+                        "filename": "otto_0.1.0_linux_arm.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_linux_arm.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "windows",
+                        "arch": "386",
+                        "filename": "otto_0.1.0_windows_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_windows_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.0",
+                        "os": "windows",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.0_windows_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.0/otto_0.1.0_windows_amd64.zip"
+                    }
+                ]
+            },
+            "0.1.1": {
+                "name": "otto",
+                "version": "0.1.1",
+                "shasums": "otto_0.1.1_SHA256SUMS",
+                "shasums_signature": "otto_0.1.1_SHA256SUMS.sig",
+                "shasums_signatures": [
+                    "otto_0.1.1_SHA256SUMS.348FFC4C.sig",
+                    "otto_0.1.1_SHA256SUMS.72D7468F.sig",
+                    "otto_0.1.1_SHA256SUMS.sig"
+                ],
+                "builds": [
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "darwin",
+                        "arch": "386",
+                        "filename": "otto_0.1.1_darwin_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_darwin_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "darwin",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.1_darwin_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_darwin_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "linux",
+                        "arch": "386",
+                        "filename": "otto_0.1.1_linux_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_linux_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "linux",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.1_linux_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_linux_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "linux",
+                        "arch": "arm",
+                        "filename": "otto_0.1.1_linux_arm.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_linux_arm.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "windows",
+                        "arch": "386",
+                        "filename": "otto_0.1.1_windows_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_windows_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.1",
+                        "os": "windows",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.1_windows_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.1/otto_0.1.1_windows_amd64.zip"
+                    }
+                ]
+            },
+            "0.1.2": {
+                "name": "otto",
+                "version": "0.1.2",
+                "shasums": "otto_0.1.2_SHA256SUMS",
+                "shasums_signature": "otto_0.1.2_SHA256SUMS.sig",
+                "shasums_signatures": [
+                    "otto_0.1.2_SHA256SUMS.348FFC4C.sig",
+                    "otto_0.1.2_SHA256SUMS.72D7468F.sig",
+                    "otto_0.1.2_SHA256SUMS.sig"
+                ],
+                "builds": [
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "darwin",
+                        "arch": "386",
+                        "filename": "otto_0.1.2_darwin_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_darwin_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "darwin",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.2_darwin_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_darwin_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "linux",
+                        "arch": "386",
+                        "filename": "otto_0.1.2_linux_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_linux_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "linux",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.2_linux_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_linux_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "linux",
+                        "arch": "arm",
+                        "filename": "otto_0.1.2_linux_arm.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_linux_arm.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "windows",
+                        "arch": "386",
+                        "filename": "otto_0.1.2_windows_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_windows_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.1.2",
+                        "os": "windows",
+                        "arch": "amd64",
+                        "filename": "otto_0.1.2_windows_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.1.2/otto_0.1.2_windows_amd64.zip"
+                    }
+                ]
+            },
+            "0.2.0": {
+                "name": "otto",
+                "version": "0.2.0",
+                "shasums": "otto_0.2.0_SHA256SUMS",
+                "shasums_signature": "otto_0.2.0_SHA256SUMS.sig",
+                "shasums_signatures": [
+                    "otto_0.2.0_SHA256SUMS.348FFC4C.sig",
+                    "otto_0.2.0_SHA256SUMS.72D7468F.sig",
+                    "otto_0.2.0_SHA256SUMS.sig"
+                ],
+                "builds": [
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "darwin",
+                        "arch": "386",
+                        "filename": "otto_0.2.0_darwin_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_darwin_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "darwin",
+                        "arch": "amd64",
+                        "filename": "otto_0.2.0_darwin_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_darwin_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "linux",
+                        "arch": "386",
+                        "filename": "otto_0.2.0_linux_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_linux_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "linux",
+                        "arch": "amd64",
+                        "filename": "otto_0.2.0_linux_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_linux_amd64.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "linux",
+                        "arch": "arm",
+                        "filename": "otto_0.2.0_linux_arm.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_linux_arm.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "windows",
+                        "arch": "386",
+                        "filename": "otto_0.2.0_windows_386.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_windows_386.zip"
+                    },
+                    {
+                        "name": "otto",
+                        "version": "0.2.0",
+                        "os": "windows",
+                        "arch": "amd64",
+                        "filename": "otto_0.2.0_windows_amd64.zip",
+                        "url": "https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_windows_amd64.zip"
+                    }
+                ]
+            }
+        }
+    }
+}
