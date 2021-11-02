@@ -108,9 +108,10 @@ function matchVersion(versionSpec, versions) {
 exports.matchVersion = matchVersion;
 function matchVersionBuild(versionSpec, version) {
     var _a;
-    const entBuild = ((_a = semver.parse(version)) === null || _a === void 0 ? void 0 : _a.build.includes('ent')) || false;
-    if (entBuild) {
-        return versionSpec.includes('+ent');
+    for (const build of ((_a = semver.parse(version)) === null || _a === void 0 ? void 0 : _a.build) || []) {
+        if (build.startsWith('ent')) {
+            return versionSpec.includes('+ent');
+        }
     }
     return !versionSpec.includes('+ent');
 }
