@@ -90,3 +90,14 @@ describe('install tests', () => {
     await installer.getBinary(PRODUCT_NAME, '0.1.0')
   })
 })
+
+describe('matchVersion', () => {
+  it('resolves a semver spec', () => {
+    expect(
+      installer.matchVersion('0.1.x', ['0.1.0', '0.1.0-beta', '0.1.0+ent'])
+    ).toBe('0.1.0')
+    expect(
+      installer.matchVersion('0.1.x+ent', ['0.1.0', '0.1.0-beta', '0.1.0+ent'])
+    ).toBe('0.1.0+ent')
+  })
+})

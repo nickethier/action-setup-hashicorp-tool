@@ -77,7 +77,7 @@ async function getMetadata(
  *
  * @returns The most relevant version based on the supplied version selector
  */
-function matchVersion(versionSpec: string, versions: string[]): string {
+export function matchVersion(versionSpec: string, versions: string[]): string {
   // from @actions/tool-cache
   let version = ''
 
@@ -91,7 +91,7 @@ function matchVersion(versionSpec: string, versions: string[]): string {
   for (let i = versions.length - 1; i >= 0; i--) {
     const potential: string = versions[i]
     const satisfied: boolean = semver.satisfies(potential, versionSpec)
-    if (satisfied) {
+    if (satisfied && matchVersionBuild(versionSpec, potential)) {
       version = potential
       break
     }
@@ -104,6 +104,15 @@ function matchVersion(versionSpec: string, versions: string[]): string {
   }
 
   return version
+}
+
+function matchVersionBuild(versionSpec: string, version: string): boolean {
+  const entBuild: boolean =
+    semver.parse(version)?.build.includes('ent') || false
+  if (entBuild) {
+    return versionSpec.includes('+ent')
+  }
+  return !versionSpec.includes('+ent')
 }
 
 /**

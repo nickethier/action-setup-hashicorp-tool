@@ -38,7 +38,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getBinary = exports.releasesUrl = void 0;
+exports.getBinary = exports.matchVersion = exports.releasesUrl = void 0;
 const core = __importStar(__nccwpck_require__(186));
 const httpm = __importStar(__nccwpck_require__(925));
 const semver = __importStar(__nccwpck_require__(911));
@@ -92,7 +92,7 @@ function matchVersion(versionSpec, versions) {
     for (let i = versions.length - 1; i >= 0; i--) {
         const potential = versions[i];
         const satisfied = semver.satisfies(potential, versionSpec);
-        if (satisfied) {
+        if (satisfied && matchVersionBuild(versionSpec, potential)) {
             version = potential;
             break;
         }
@@ -104,6 +104,15 @@ function matchVersion(versionSpec, versions) {
         core.debug(`version match not found for ${version}`);
     }
     return version;
+}
+exports.matchVersion = matchVersion;
+function matchVersionBuild(versionSpec, version) {
+    var _a;
+    const entBuild = ((_a = semver.parse(version)) === null || _a === void 0 ? void 0 : _a.build.includes('ent')) || false;
+    if (entBuild) {
+        return versionSpec.includes('+ent');
+    }
+    return !versionSpec.includes('+ent');
 }
 /**
  * @param versionSpec The version defined by a user in a semver compatible format
