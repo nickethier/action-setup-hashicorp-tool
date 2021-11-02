@@ -89,6 +89,12 @@ function matchVersion(versionSpec, versions) {
         }
         return -1;
     });
+    // check for exact match first
+    for (const potential of versions) {
+        if (potential === versionSpec) {
+            return potential;
+        }
+    }
     for (let i = versions.length - 1; i >= 0; i--) {
         const potential = versions[i];
         const satisfied = semver.satisfies(potential, versionSpec);

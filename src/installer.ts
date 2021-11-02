@@ -88,6 +88,13 @@ export function matchVersion(versionSpec: string, versions: string[]): string {
     return -1
   })
 
+  // check for exact match first
+  for (const potential of versions) {
+    if (potential === versionSpec) {
+      return potential
+    }
+  }
+
   for (let i = versions.length - 1; i >= 0; i--) {
     const potential: string = versions[i]
     const satisfied: boolean = semver.satisfies(potential, versionSpec)

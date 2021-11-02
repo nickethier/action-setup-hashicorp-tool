@@ -102,5 +102,24 @@ describe('matchVersion', () => {
     expect(
       installer.matchVersion('0.1.x+ent-beta', ['0.1.0-beta', '0.1.0+ent-beta'])
     ).toBe('0.1.0+ent-beta')
-  })
+  }),
+    it('resolves exact version', () => {
+      expect(
+        installer.matchVersion('1.11.0-beta2', [
+          '1.11.0-alpha',
+          '1.11.0-beta1',
+          '1.11.0-beta2'
+        ])
+      ).toBe('1.11.0-beta2')
+      expect(
+        installer.matchVersion('1.11.0+ent-beta2', [
+          '1.11.0+ent-alpha',
+          '1.11.0+ent-beta1',
+          '1.11.0+ent-beta2',
+          '1.11.0-alpha',
+          '1.11.0-beta1',
+          '1.11.0-beta2'
+        ])
+      ).toBe('1.11.0+ent-beta2')
+    })
 })
