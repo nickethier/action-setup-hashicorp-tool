@@ -114,12 +114,10 @@ export function matchVersion(versionSpec: string, versions: string[]): string {
 }
 
 function matchVersionBuild(versionSpec: string, version: string): boolean {
-  for (const build of semver.parse(version)?.build || []) {
-    if (build.startsWith('ent')) {
-      return versionSpec.includes('+ent')
-    }
+  if (versionSpec.endsWith('+ent')) {
+    return semver.parse(version)?.build.includes('ent') || false
   }
-  return !versionSpec.includes('+ent')
+  return !semver.parse(version)?.build.includes('ent') || false
 }
 
 /**

@@ -96,12 +96,9 @@ describe('matchVersion', () => {
     expect(
       installer.matchVersion('0.1.x', ['0.1.0', '0.1.0-beta', '0.1.0+ent'])
     ).toBe('0.1.0')
-    expect(
-      installer.matchVersion('0.1.x+ent', ['0.1.0', '0.1.0-beta', '0.1.0+ent'])
-    ).toBe('0.1.0+ent')
-    expect(
-      installer.matchVersion('0.1.x+ent-beta', ['0.1.0-beta', '0.1.0+ent-beta'])
-    ).toBe('0.1.0+ent-beta')
+    expect(installer.matchVersion('0.1.x+ent', ['0.1.0', '0.1.0+ent'])).toBe(
+      '0.1.0+ent'
+    )
   }),
     it('resolves exact version', () => {
       expect(

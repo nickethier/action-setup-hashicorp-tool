@@ -113,13 +113,11 @@ function matchVersion(versionSpec, versions) {
 }
 exports.matchVersion = matchVersion;
 function matchVersionBuild(versionSpec, version) {
-    var _a;
-    for (const build of ((_a = semver.parse(version)) === null || _a === void 0 ? void 0 : _a.build) || []) {
-        if (build.startsWith('ent')) {
-            return versionSpec.includes('+ent');
-        }
+    var _a, _b;
+    if (versionSpec.endsWith('+ent')) {
+        return ((_a = semver.parse(version)) === null || _a === void 0 ? void 0 : _a.build.includes('ent')) || false;
     }
-    return !versionSpec.includes('+ent');
+    return !((_b = semver.parse(version)) === null || _b === void 0 ? void 0 : _b.build.includes('ent')) || false;
 }
 /**
  * @param versionSpec The version defined by a user in a semver compatible format
