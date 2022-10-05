@@ -29,12 +29,12 @@
     "@actions/http-client": "^1.0.6",
     "@actions/io": "^1.0.2",
     "@actions/tool-cache": "^1.5.5",
-    "semver": "^6.1.1"
+    "semver": "^7.3.8"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.6",
-    "@types/semver": "^7.3.9",
+    "@types/semver": "^7.3.12",
     "@typescript-eslint/parser": "^5.2.0",
     "@vercel/ncc": "^0.31.1",
     "nock": "^13.0.4",
